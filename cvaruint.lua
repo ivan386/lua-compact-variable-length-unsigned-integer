@@ -18,7 +18,7 @@ function cvaruint.decode(data)
         uint = uint + (byte << (i * 7))
         i = i + 1
     until byte & 128 == 0
-    return uint
+    return uint, i
 end
 
 return cvaruint
